@@ -26,7 +26,7 @@ func init() {
 		if err != nil {
 			log.Fatal(err)
 		}
-		t, err := template.New(k).ParseGlob(string(tbs))
+		t, err := template.New(k).Parse(string(tbs))
 		if err != nil {
 			log.Fatal(err)
 		}
